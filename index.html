@@ -1,37 +1,49 @@
+<!DOCTYPE html>
 <head>
-    <link href="./style.css" rel="stylesheet"/>
 
+    <link href="./style.css" rel="stylesheet"/>
+    <link href='./index.js'>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body class='landing_body'>
     <div class='header'>
         <div class='title'>
             Ainda fazendo planejamento em post-its?
         </div>
-        <div class='logo'>
+        <div class='logoPretha'>
             <img src="./assets/image/logo/logo-pretha.png" />
         </div>
     </div>
     <div class='detail'>
-        <div class='text'>
-            <p>Que tal ter sua atividades da semana organizadas num único local?</br></br>
-            O Pretha Estúdio Criativo disponibiliza para você um planejador diário, um calendário permanente e uma folha de cardápio semanal.</br></br>
-            Tudo isso gratuitamente para você conhecer melhor o tipo de serviço que o Estúdio pode oferecer para você.</br></br>
-            Preencha o formulário abaixo para receber esses presentes e tornar seus dias muito mais organizados e produtivos.</p>
+        <div class='content'>
+            <h2 class='text-content'>Que tal ter suas atividades da semana organizadas num único local?</br></br></h2>
+            <p class='text-content'>O Pretha Estúdio Criativo disponibiliza para você um planejador diário,</br>
+                um calendário permanente e uma folha de cardápio semanal. Os lindos presentes abaixo podem ser</br>
+                impressos e usados livremente para você deixar sua vida mais organizada.</br></p>
+            <div class='gifts'>
+                <img class='photoProduct' src='./assets/image/elements/planejador.png' />
+                <img class='photoProduct' src='./assets/image/elements/calendario.png' />
+                <img class='photoProduct' src='./assets/image/elements/cardapio.png' />
+            </div>
+            <p class='text-content'>Tudo isso gratuitamente para você conhecer melhor o tipo de serviço que o Estúdio</br>
+                pode oferecer para você. Como esses outros lindos exemplos abaixo:</br></br></p>
             <div class='products'>
-                <img class='photoProduct' src='./assets/image/elements/cartao-digital1.png' />
+                <img class='photoProduct' src='./assets/image/elements/cartao-digital1.png'/>
                 <img class='photoProduct' src='./assets/image/elements/adesivo.png' />
                 <img class='photoProduct' src='./assets/image/elements/cartao-visita1.png' />
+                <img class='photoProduct' src='./assets/image/elements/etiqueta.png' />
                 <img class='photoProduct' src='./assets/image/elements/papel-timbrado.png' />
+                <img class='photoProduct' src='./assets/image/elements/papelaria_personal.png' />
             </div>
         </div>
         <div class='form'>
             <div>
-                <h3>Informe seu melhor e-mail para receber o presente especial da Pretha.</h3>
+                <h4 class='text-form'>Para receber esses presentes e também ficar por dentro das novidades que o Pretha traz para você preencha esse formulário com seu melhor e-mail.</h4>
             </div>
             <div class='email'>
-                <input class='emailBox'/>
-                <button class='emailButton'>Receber Presente</button>
+                <input class='emailBox' id='emailBox'/>
+                <button class='emailButton' onclick="validateEmail()">Receber Presente</button>
             </div>
         </div>
     </div>
