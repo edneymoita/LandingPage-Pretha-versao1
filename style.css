@@ -2,6 +2,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     color: #973155;
+    overflow-x:hidden;
 }
 
 .header {
@@ -26,6 +27,7 @@
     flex-basis: 100px;
     flex-grow: 1;
     transition:0.3s;
+    text-align: center;
 }
 
 .logoPretha:hover {
@@ -51,7 +53,7 @@
 
 .gifts {
     display:flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content:space-around;
     width: 100%;
 }
@@ -67,6 +69,10 @@
     flex-basis: 100px;
     flex-grow: 1;
     width: 30%;
+}
+
+.formText {
+    margin: 10px;
 }
 
 .products {
@@ -99,6 +105,10 @@
     border-color: #e8d4b6;
 }
 
+.emailBox:focus {
+    box-shadow:#973155;
+}
+
 .emailButton {
     background-color: #003d45;
     color:#e8d4b6;
@@ -107,6 +117,11 @@
     margin: 10px;
     font-size: medium;
     font-weight: 600;
+}
+
+.msg {
+    color:#ff0000;
+    margin: 10px;
 }
 
 @media (max-width: 790px){
@@ -128,5 +143,6 @@
 
     .gifts {
         flex-wrap: wrap;
+        flex-direction: column;
     }
 }
