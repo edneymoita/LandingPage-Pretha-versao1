@@ -1,61 +1,78 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <HTML lang="pt-br">
-    <HEAD>
-        <META CHARSET="UTF-8"/>
-        <title>Pretha Estúdio Criativo</title>
-        
-        <META NAME="description" CONTENT="Landing Page Pretha"/>
-        <meta name="author" content="Edney Farias Moita"/>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+<HEAD>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pretha Estúdio Criativo</title>
+    
+    <META NAME="description" CONTENT="Landing Page Pretha"/>
+    <meta name="author" content="Edney Farias Moita"/>
 
-        <link href="./style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <link href="./assets/image/logo/icon.png" rel="icon">
-        <script src="./index.js" type="text/javascript"></script>
-    </HEAD>
+    <link href="./style.css" rel="stylesheet"/>
+    <script src="./index.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="./assets/image/logo/icon.png" rel="icon"/>
+</HEAD>
 
-    <body class='landing_body'>
-        <div class='header'>
-            <div class='title'>
-                Ainda fazendo planejamento em post-its?
+<body class='pageBody'>
+    <div class='header'>
+        <div class='title'>
+            É promoção que você quer?!?!
+        </div>
+
+        <div class='logoPretha'>
+            <img src="./assets/image/logo/logo-pretha.png" />
+        </div>
+    </div>
+    <div class='detail'>
+        <div class='content'>
+            <img class='blackFriday' src='./assets/image/elements/blackfriday.png'/>
+
+            <h1 class='contentTitle'>Vem aí mais uma</br>SEXTA PRETHA!</br></h1>
+
+            <p class='contentText'>Estamos preparando alguns preços especiais em todos os produtos oferecidos pelo Estúdio.</br></br>
+                Preencha o formulário ao lado e receba em primeira mão as nossas ofertas.</br></br>
+                Sabemos que a ansiedade é grande e para tornar a espera menos sofrida a Pretha preparou um presente para você, especialmente 
+                confeccionado para tornar os seus dias ainda mais organizados e produtivos.</br></br>
+                Você receberá no seu e-mail um pacote com os três produtos abaixo.</p>
+
+            <div class='products'>
+                <figure>
+                    <img class='photoProduct' src='./assets/image/elements/planejador.png' alt='Planejador Diário'/>
+                    <figcaption>Planejador Diário</figcaption>
+                </figure>
+
+                <figure>
+                    <img class='photoProduct' src='./assets/image/elements/calendario.png' alt='Calendário Permanente'/>
+                    <figcaption>Calendário Permanente</figcaption>
+                </figure>
+
+                <figure>
+                    <img class='photoProduct' src='./assets/image/elements/cardapio.png' alt='Cardário Semanal'/>
+                    <figcaption>Cardário Semanal</figcaption>
+                </figure>
             </div>
-            <div class='logoPretha'>
-                <img src="./assets/image/logo/logo-pretha.png" />
+
+            <h5>Site fantasia desenvolvido por Edney Moita</br>
+                Treinamento Hiring Coders</h5>
+        </div>
+        <div class='form'>
+
+            <div>
+                <h4 class='formText'>Não fique fora dessa! Preencha os campos abaixo, receba um presente da Pretha e ainda fique por dentro das novidades.</h4>
+            </div>
+
+            <div class='email'>
+                <label for='nameBox'>Como você gosta de ser chamado</label>
+                <input class='inputBox' type='text' id='nameBox' placeholder='Fulano'/>
+
+                <label for='emailBox'>Seu melhor e-mail</label>
+                <input class='inputBox' type='email' id='emailBox' placeholder='fulano@algumlugar.com.br'/>
+
+                <button class='emailButton' onclick="validateEmail()">Quero Meu Presente</button>
+                <h3 class='msg' id='msg'></h3>
             </div>
         </div>
-        <div class='detail'>
-            <div class='content'>
-                <h2>Que tal ter suas atividades da semana organizadas num único local?</br></br></h2>
-                <p>O Pretha Estúdio Criativo disponibiliza para você um planejador diário,</br>
-                    um calendário permanente e uma folha de cardápio semanal. Os lindos presentes abaixo podem ser</br>
-                    impressos e usados livremente para você tornar sua vida mais organizada ainda.</br></p>
-                <div class='gifts'>
-                    <img class='photoProduct' src='./assets/image/elements/planejador.png' />
-                    <img class='photoProduct' src='./assets/image/elements/calendario.png' />
-                    <img class='photoProduct' src='./assets/image/elements/cardapio.png' />
-                </div>
-                <p>Tudo isso gratuitamente para você conhecer melhor o tipo de serviço que o Pretha Estúdio Criativo</br>
-                    pode oferecer para você, tais como esses outros lindos exemplos abaixo.</br>
-                    Tudo personalidado, do seu jeito e com a sua cara.</br></p>
-                <div class='products'>
-                    <img class='photoProduct' src='./assets/image/elements/cartao-digital1.png'/>
-                    <img class='photoProduct' src='./assets/image/elements/adesivo.png' />
-                    <img class='photoProduct' src='./assets/image/elements/cartao-visita1.png' />
-                    <img class='photoProduct' src='./assets/image/elements/etiqueta.png' />
-                    <img class='photoProduct' src='./assets/image/elements/papel-timbrado.png' />
-                    <img class='photoProduct' src='./assets/image/elements/papelaria_personal.png' />
-                </div>
-            </div>
-            <div class='form'>
-                <div>
-                    <h4 class='formText'>Para receber esses presentes e também ficar por dentro das novidades que o Pretha traz para você preencha esse formulário com seu melhor e-mail.</h4>
-                </div>
-                <div class='email'>
-                    <input class='emailBox' type='email' id='emailBox'/>
-                    <button class='emailButton' onclick="validateEmail()">Receber Presente</button>
-                    <h3 class='msg' id='msg'></h3>
-                </div>
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </HTML>
