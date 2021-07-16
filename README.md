@@ -1,1 +1,1 @@
-# LandingPage-Pretha-versao1
+# Primeiro projeto do treinamento Hiring Coders. Fazer uma landing page de um site de e-commerce, usando HTML, CSS e JS, com formulário para captação de nome e e-mail.

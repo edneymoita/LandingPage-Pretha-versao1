@@ -44,8 +44,8 @@
 }
 
 .blackFriday {
-    width: 120px;
-    height: 120px;
+    width: 500px;
+    height: auto;
 }
 
 .content {
@@ -93,7 +93,7 @@
 
 .products {
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -107,6 +107,17 @@
 
 .photoProduct:hover {
     transform:scale(1.7);
+}
+
+.social {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.socialIcon {
+    width: 40px;
+    height: auto;
 }
 
 .email {
@@ -161,6 +172,11 @@
 
     .logoPretha {
         width: 100px;
+        height: auto;
+    }
+
+    .blackFriday {
+        width:200px;
         height: auto;
     }
 }
